@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1AE0272B1F288AB70077F5A1"
+               BuildableName = "KKPopTooltip.app"
+               BlueprintName = "KKPopTooltip"
+               ReferencedContainer = "container:KKPopTooltip.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1AE027441F288AB70077F5A1"
+               BuildableName = "KKPopTooltipTests.xctest"
+               BlueprintName = "KKPopTooltipTests"
+               ReferencedContainer = "container:KKPopTooltip.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1AE0274F1F288AB70077F5A1"
+               BuildableName = "KKPopTooltipUITests.xctest"
+               BlueprintName = "KKPopTooltipUITests"
+               ReferencedContainer = "container:KKPopTooltip.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1AE0272B1F288AB70077F5A1"
+            BuildableName = "KKPopTooltip.app"
+            BlueprintName = "KKPopTooltip"
+            ReferencedContainer = "container:KKPopTooltip.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1AE0272B1F288AB70077F5A1"
+            BuildableName = "KKPopTooltip.app"
+            BlueprintName = "KKPopTooltip"
+            ReferencedContainer = "container:KKPopTooltip.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1AE0272B1F288AB70077F5A1"
+            BuildableName = "KKPopTooltip.app"
+            BlueprintName = "KKPopTooltip"
+            ReferencedContainer = "container:KKPopTooltip.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
