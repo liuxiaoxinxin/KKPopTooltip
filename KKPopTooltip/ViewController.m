@@ -79,7 +79,7 @@
 }
 
 - (UIImage *)imageForEmptyDataSet:(UIScrollView *)scrollView {
-    return [UIImage imageNamed:@"Message.png"];
+    return [UIImage imageNamed:@"message.png"];
 }
 
 

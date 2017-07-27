@@ -20,7 +20,7 @@
 		1AE027691F288C490077F5A1 /* UIView+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE027681F288C490077F5A1 /* UIView+Size.m */; };
 		1AE0276C1F288C560077F5A1 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE0276B1F288C560077F5A1 /* NSString+Category.m */; };
 		1AE0276F1F288D780077F5A1 /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE0276E1F288D780077F5A1 /* UIColor+Additions.m */; };
-		1AE027711F28916A0077F5A1 /* Message@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE027701F28916A0077F5A1 /* Message@2x.png */; };
+		1AE027711F28916A0077F5A1 /* message@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE027701F28916A0077F5A1 /* message@2x.png */; };
 		1AE027731F2892A30077F5A1 /* photo_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE027721F2892A30077F5A1 /* photo_camera@2x.png */; };
 		7DCEB915AB7DE6011907510E /* libPods-KKPopTooltipTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84010EE5486CA88FB0A48554 /* libPods-KKPopTooltipTests.a */; };
 		B26E440421FC04244D069057 /* libPods-KKPopTooltip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB360C38F1322C73C6D82E58 /* libPods-KKPopTooltip.a */; };
@@ -69,7 +69,7 @@
 		1AE0276B1F288C560077F5A1 /* NSString+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
 		1AE0276D1F288D780077F5A1 /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
 		1AE0276E1F288D780077F5A1 /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
-		1AE027701F28916A0077F5A1 /* Message@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Message@2x.png"; sourceTree = "<group>"; };
+		1AE027701F28916A0077F5A1 /* message@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message@2x.png"; sourceTree = "<group>"; };
 		1AE027721F2892A30077F5A1 /* photo_camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo_camera@2x.png"; sourceTree = "<group>"; };
 		4FC723E0DB75AC152F193D91 /* Pods-KKPopTooltipTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKPopTooltipTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KKPopTooltipTests/Pods-KKPopTooltipTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6E2BDA2B719C8BBAF0706EE5 /* Pods-KKPopTooltipUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKPopTooltipUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KKPopTooltipUITests/Pods-KKPopTooltipUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 			children = (
 				1AE027621F288ADD0077F5A1 /* KKPopTooltip */,
 				1AE027321F288AB70077F5A1 /* AppDelegate.h */,
-				1AE027701F28916A0077F5A1 /* Message@2x.png */,
+				1AE027701F28916A0077F5A1 /* message@2x.png */,
 				1AE027721F2892A30077F5A1 /* photo_camera@2x.png */,
 				1AE027331F288AB70077F5A1 /* AppDelegate.m */,
 				1AE027351F288AB70077F5A1 /* ViewController.h */,
@@ -340,7 +340,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AE027711F28916A0077F5A1 /* Message@2x.png in Resources */,
+				1AE027711F28916A0077F5A1 /* message@2x.png in Resources */,
 				1AE0273F1F288AB70077F5A1 /* LaunchScreen.storyboard in Resources */,
 				1AE0273C1F288AB70077F5A1 /* Assets.xcassets in Resources */,
 				1AE0273A1F288AB70077F5A1 /* Main.storyboard in Resources */,
