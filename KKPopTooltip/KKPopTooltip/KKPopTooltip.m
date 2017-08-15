@@ -147,7 +147,7 @@ typedef void((^DrawCompletion)());
     return arrowX;
 }
 
-- (void)showInView:(UIView *)view {
+- (void)showInView:(UIView *)view animation:(BOOL)animation {
     self.alpha = 0;
     [view addSubview:self];
     __weak KKPopTooltip *weakSelf = self;
@@ -157,6 +157,10 @@ typedef void((^DrawCompletion)());
 }
 
 - (void)removeView {
+    [self removeViewAnimated:YES];
+}
+
+- (void)removeViewAnimated:(BOOL)animated {
     [self startAnimation:NO];
     POPSpringAnimation *scaleAimation = [self.layer pop_animationForKey:@"scaleAnimation"];
     scaleAimation.completionBlock = ^(POPAnimation *anim, BOOL finished) {
@@ -205,19 +209,19 @@ typedef void((^DrawCompletion)());
 
 #pragma mark - Class Method
 
-+ (void)showAtBarButtonItem:(UIBarButtonItem *)barButtonItem message:(NSString *)message arrowPosition:(TooltipArrowPosition)position {
-    if (![barButtonItem isKindOfClass:[UIBarButtonItem class]]) {return; }
++ (KKPopTooltip *)showAtBarButtonItem:(UIBarButtonItem *)barButtonItem message:(NSString *)message arrowPosition:(TooltipArrowPosition)position {
+    if (![barButtonItem isKindOfClass:[UIBarButtonItem class]]) {return nil; }
     UIView *targetView = (UIView *)[barButtonItem performSelector:@selector(view)];
     UIView *targetSuperview = [targetView superview];
     UIView *containerView = [targetSuperview superview];
     if (nil == containerView) {
         NSLog(@"Cannot determine container view from UIBarButtonItem: %@", barButtonItem);
-        return;
+        return nil;
     }
-    [self showPointingAtView:targetView inView:containerView message:message arrowPosition:position];
+    return [self showPointingAtView:targetView inView:containerView message:message arrowPosition:position];
 }
 
-+ (void)showPointingAtView:(UIView *)targetView inView:(UIView *)containerView message:(NSString *)message arrowPosition:(TooltipArrowPosition)position {
++ (KKPopTooltip *)showPointingAtView:(UIView *)targetView inView:(UIView *)containerView message:(NSString *)message arrowPosition:(TooltipArrowPosition)position {
     CGRect rect = [containerView convertRect:targetView.frame fromView:targetView.superview];
     CGPoint point = CGPointZero;
     if (position == TooltipArrowPositionTop) {
@@ -225,10 +229,10 @@ typedef void((^DrawCompletion)());
     } else if (position == TooltipArrowPositionBottom) {
         point = CGPointMake(rect.origin.x + rect.size.width/2, rect.origin.y);
     }
-    [self showPointing:point inView:containerView message:message arrowPosition:position];
+    return [self showPointing:point inView:containerView message:message arrowPosition:position];
 }
 
-+ (void)showPointing:(CGPoint )point inView:(UIView *)containerView message:(NSString *)message arrowPosition:(TooltipArrowPosition)position {
++ (KKPopTooltip *)showPointing:(CGPoint )point inView:(UIView *)containerView message:(NSString *)message arrowPosition:(TooltipArrowPosition)position {
 
     CGSize textSize = [message kk_getStringSizeWithStringFont:[UIFont boldSystemFontOfSize:16] withWidthOrHeight:SCREEN_WIDTH - 30 isWidthFixed:YES];
     CGSize tooltipSize = CGSizeMake(textSize.width + (textBorder + margin) * 2, textSize.height + (textBorder + margin) * 2 + attached);
@@ -249,7 +253,8 @@ typedef void((^DrawCompletion)());
     CGPoint arrowPoint = [containerView convertPoint:point toView:tooltip];//CGPointMake(point.x - x, point.y);
     tooltip.arrowPoint = arrowPoint;
     tooltip.textLabel.text = message;
-    [tooltip showInView:containerView];
+    [tooltip showInView:containerView animation:YES];
+    return tooltip;
 }
 
 @end
