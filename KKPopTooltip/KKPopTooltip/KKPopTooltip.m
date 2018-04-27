@@ -9,8 +9,8 @@
 
 #import "KKPopTooltip.h"
 
-#define SCREEN_WIDTH ([[UIScreen mainScreen]bounds].size.width)
-#define SCREEN_HEIGHT ([[UIScreen mainScreen]bounds].size.height)
+#define KK_SCREEN_WIDTH ([[UIScreen mainScreen]bounds].size.width)
+#define KK_SCREEN_HEIGHT ([[UIScreen mainScreen]bounds].size.height)
 
 static CGFloat const attached = 16.0f; /// 箭头大小
 static CGFloat const radius = 10.0f;   /// 圆角半径
@@ -234,14 +234,14 @@ typedef void((^DrawCompletion)());
 
 + (KKPopTooltip *)showPointing:(CGPoint )point inView:(UIView *)containerView message:(NSString *)message arrowPosition:(TooltipArrowPosition)position {
 
-    CGSize textSize = [message kk_getStringSizeWithStringFont:[UIFont boldSystemFontOfSize:16] withWidthOrHeight:SCREEN_WIDTH - 30 isWidthFixed:YES];
+    CGSize textSize = [message kk_getStringSizeWithStringFont:[UIFont boldSystemFontOfSize:16] withWidthOrHeight:KK_SCREEN_WIDTH - 30 isWidthFixed:YES];
     CGSize tooltipSize = CGSizeMake(textSize.width + (textBorder + margin) * 2, textSize.height + (textBorder + margin) * 2 + attached);
     CGRect rect = CGRectZero;
     CGFloat x = point.x - tooltipSize.width/2;
     if (x < 10) {
         x = 10;
-    } else if ((tooltipSize.width + x) > SCREEN_WIDTH - 10) {
-        x = SCREEN_WIDTH - 10 - tooltipSize.width;
+    } else if ((tooltipSize.width + x) > KK_SCREEN_WIDTH - 10) {
+        x = KK_SCREEN_WIDTH - 10 - tooltipSize.width;
     }
     if (position == TooltipArrowPositionTop) {
         rect = CGRectMake(x, point.y, tooltipSize.width, tooltipSize.height);
