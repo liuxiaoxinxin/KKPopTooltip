@@ -146,14 +146,14 @@
 			children = (
 				1AE027621F288ADD0077F5A1 /* KKPopTooltip */,
 				1AE027321F288AB70077F5A1 /* AppDelegate.h */,
-				1AE027701F28916A0077F5A1 /* message@2x.png */,
-				1AE027721F2892A30077F5A1 /* photo_camera@2x.png */,
 				1AE027331F288AB70077F5A1 /* AppDelegate.m */,
 				1AE027351F288AB70077F5A1 /* ViewController.h */,
 				1AE027361F288AB70077F5A1 /* ViewController.m */,
 				1AE027381F288AB70077F5A1 /* Main.storyboard */,
 				1AE0273B1F288AB70077F5A1 /* Assets.xcassets */,
 				1AE0273D1F288AB70077F5A1 /* LaunchScreen.storyboard */,
+				1AE027701F28916A0077F5A1 /* message@2x.png */,
+				1AE027721F2892A30077F5A1 /* photo_camera@2x.png */,
 				1AE027401F288AB70077F5A1 /* Info.plist */,
 				1AE0272F1F288AB70077F5A1 /* Supporting Files */,
 			);
