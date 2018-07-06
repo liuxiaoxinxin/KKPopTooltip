@@ -20,8 +20,10 @@ static CGFloat const textBorder = 12.0f; /// 文字到边框的距离
 typedef void((^DrawCompletion)());
 
 @interface KKPopTooltip()
+@property (nonatomic, readwrite, assign) TooltipArrowPosition arrowPosition;
 @property (nonatomic, copy) DrawCompletion drawCompletion;
 @property (nonatomic, assign) CGPoint arrowPoint;
+@property (nonatomic, readwrite, strong) UILabel *textLabel;
 @end
 
 @implementation KKPopTooltip
@@ -44,7 +46,6 @@ typedef void((^DrawCompletion)());
     self.layer.shadowColor = [UIColor colorWithHexString:@"bcbcbc"].CGColor;
     self.layer.shadowOpacity = 1;
     self.layer.shadowRadius = 8;
-//    self.contentMode = UIViewContentModeRedraw; // 每次更改frame重绘
     self.userInteractionEnabled = YES;
     [self addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(removeView)]];
         
@@ -70,8 +71,6 @@ typedef void((^DrawCompletion)());
     }
 }
 
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     CGContextSetRGBFillColor(ctx, 1, 1, 1, 1);

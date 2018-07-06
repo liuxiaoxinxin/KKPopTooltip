@@ -13,8 +13,6 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import <CoreImage/CoreImage.h>
 #import <UIKit/UIKit.h>
-
-
 	
 @interface UIColor (UIColor_Additions)
 @property (nonatomic, readonly) CGColorSpaceModel colorSpaceModel;
@@ -62,6 +60,7 @@
 + (UIColor *)colorWithIntRed:(NSInteger)red green:(NSInteger)green blud:(NSInteger)blue alpha:(NSInteger)alpha;
 
 + (UIColor *)colorWithDecimalString:(NSString *)stringToConvert;
+
 @end
 	
 #if SUPPORTS_UNDOCUMENTED_API

@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 
 @interface NSString (Category)
+
 /*
  * @param  isWidth 是否是宽固定(用于区别宽/高).
  * @param fixedSize 固定尺寸
@@ -23,4 +24,5 @@
 - (NSString *)kk_pinyinInitials;
 ///含有多少个字符串
 - (int)kk_calculateSubStringCount:(NSString *)str;
+
 @end

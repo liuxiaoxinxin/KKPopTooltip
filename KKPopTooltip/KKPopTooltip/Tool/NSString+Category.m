@@ -11,16 +11,16 @@
 @implementation NSString (Category)
 
 - (CGSize)kk_getStringSizeWithStringFont:(UIFont *)font withWidthOrHeight:(CGFloat)fixedSize isWidthFixed:(BOOL)isWidth {
-    CGSize   sizeC;
+    CGSize sizeC;
     if (isWidth) {
         sizeC = CGSizeMake(fixedSize ,MAXFLOAT);
-    }else{
+    } else {
         sizeC = CGSizeMake(MAXFLOAT ,fixedSize);
     }
-    CGSize   sizeFileName = [self boundingRectWithSize:sizeC
-                                                     options:NSStringDrawingUsesLineFragmentOrigin
-                                                  attributes:@{NSFontAttributeName:font}
-                                                     context:nil].size;
+    CGSize sizeFileName = [self boundingRectWithSize:sizeC
+                                             options:NSStringDrawingUsesLineFragmentOrigin
+                                          attributes:@{NSFontAttributeName:font}
+                                             context:nil].size;
     return sizeFileName;
 }
 
@@ -56,14 +56,12 @@
 }
 
 - (int)kk_calculateSubStringCount:(NSString *)str {
-    
     int count = 0;
     NSRange range = [self rangeOfString:str];
     if (range.location == NSNotFound) {
         return count;
     }
     NSString * subStr = self;
-    
     while (range.location != NSNotFound) {
         //只要进入循环就要count++
         count++;
@@ -74,7 +72,6 @@
         //如果存在,我们的while循环会继续运行,如果不存在while循环结束
         range = [subStr rangeOfString:str];
     }
-    
     return count;
 }
 

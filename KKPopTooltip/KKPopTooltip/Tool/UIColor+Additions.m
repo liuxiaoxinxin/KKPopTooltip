@@ -549,4 +549,5 @@ static const char *colorNameDB = ","
 	
 	return result;
 }
+
 @end
