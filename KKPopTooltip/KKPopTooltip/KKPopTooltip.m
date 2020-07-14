@@ -15,7 +15,7 @@
 static CGFloat const attached = 16.0f; /// 箭头大小
 static CGFloat const radius = 10.0f;   /// 圆角半径
 static CGFloat const margin = 2.0f;    /// 内部边界
-static CGFloat const textBorder = 12.0f; /// 文字到边框的距离
+static CGFloat const border = 12.0f; /// 文字到边框的距离
 
 typedef void((^DrawCompletion)());
 
@@ -43,28 +43,17 @@ typedef void((^DrawCompletion)());
 
 - (void)configurationViews {
     self.backgroundColor = [UIColor clearColor];
-    self.layer.shadowColor = [UIColor colorWithHexString:@"bcbcbc"].CGColor;
+    self.layer.shadowColor = [UIColor colorWithWhite:0.8 alpha:1].CGColor;
     self.layer.shadowOpacity = 1;
     self.layer.shadowRadius = 8;
     self.userInteractionEnabled = YES;
     [self addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(removeView)]];
-        
-    self.textLabel = [[UILabel alloc]init];
-    self.textLabel.size = CGSizeMake(self.width, self.height - attached);
-    self.textLabel.textColor = [UIColor colorWithHexString:@"191919"];
-    self.textLabel.font = [UIFont boldSystemFontOfSize:16];
-    self.textLabel.textAlignment = NSTextAlignmentCenter;
-    self.textLabel.backgroundColor = [UIColor clearColor];
-    self.textLabel.numberOfLines = 0;
-    [self addSubview:self.textLabel];
-    
+            
     switch (self.arrowPosition) {
         case TooltipArrowPositionTop:
-            self.textLabel.top = attached;
             self.layer.shadowOffset = CGSizeMake(0, 0);
             break;
         case TooltipArrowPositionBottom:
-            self.textLabel.top = 0;
             self.layer.shadowOffset = CGSizeMake(0, 4);
             break;
         default: break;
@@ -92,21 +81,33 @@ typedef void((^DrawCompletion)());
     }
 }
 
+- (CGFloat)width {
+  return CGRectGetWidth([self frame]);
+}
+
+- (CGFloat)height {
+  return CGRectGetHeight([self frame]);
+}
+
 // up.
 - (void)drawTopAttachedWithContext:(CGContextRef )ctx arrow:(CGFloat)arrowX {
-    CGContextMoveToPoint(ctx, self.width - margin, self.height - 20);  // 开始坐标右边开始
+    // 开始 坐标右边开始
+    CGContextMoveToPoint(ctx, self.width - margin, self.height - 20);
     // 右下角角度
-    CGContextAddArcToPoint(ctx, self.width - margin, self.height - margin, self.width-20, self.height - margin, radius);
+    CGContextAddArcToPoint(ctx, self.width - margin, self.height - margin, self.width - 20, self.height - margin, radius);
     // 左下角角度
-    CGContextAddArcToPoint(ctx, 0 + margin, self.height - margin, 0 + margin, self.height-20, radius);
+    CGContextAddArcToPoint(ctx, 0 + margin, self.height - margin, 0 + margin, self.height - 20, radius);
     // 左上角
     CGContextAddArcToPoint(ctx, 0 + margin, attached, self.width - 20, attached, radius);
     // 箭头开始
-    CGContextAddArcToPoint(ctx, arrowX- (attached *  3/2)/2.0, attached, arrowX, 0.0, radius/2.0);
+    if (arrowX - (attached * 3 / 2) / 2.0 < (radius + margin)) {
+         CGContextAddLineToPoint(ctx, arrowX - (attached * 3 / 2) / 2.0, attached);
+    }
+    CGContextAddArcToPoint(ctx, arrowX - (attached * 3 / 2) / 2.0, attached, arrowX, 0.0, radius / 2.0);
     // 箭头顶点
-    CGContextAddArcToPoint(ctx, arrowX, 0 + margin, arrowX + (attached * 3/2)/2.0, attached, radius/2.0);
+    CGContextAddArcToPoint(ctx, arrowX, 0 + margin, arrowX + (attached * 3 / 2) / 2.0, attached, radius / 2.0);
     // 箭头结束
-    CGContextAddArcToPoint(ctx, arrowX + (attached * 3/2)/2.0, attached, arrowX + (attached * 3/2)/2.0 + 20, attached, radius/2.0);
+    CGContextAddArcToPoint(ctx, arrowX + (attached * 3 / 2) / 2.0, attached, arrowX + (attached * 3 / 2) / 2.0 + 20, attached, radius / 2.0);
     // 右上角
     CGContextAddArcToPoint(ctx, self.width - margin, attached, self.width - margin, attached + 20.0, radius);
 }
@@ -114,24 +115,25 @@ typedef void((^DrawCompletion)());
 // down.
 - (void)drawBottomAttachedWithContext:(CGContextRef )ctx arrow:(CGFloat)arrowX {
     CGContextMoveToPoint(ctx, self.width - margin, self.height - 20);  // 开始坐标右边开始
-    CGContextAddArcToPoint(ctx, self.width - margin, self.height - margin - attached, self.width-20, self.height - margin - attached , radius);
+    CGContextAddArcToPoint(ctx, self.width - margin, self.height - margin - attached, self.width - 20, self.height - margin - attached , radius);
     CGContextAddArcToPoint(ctx,
-                           arrowX + attached * 3/2/2.0, self.height - margin - attached,
+                           arrowX + attached * 3 / 4.0, self.height - margin - attached,
                            arrowX, self.height - margin,
-                           radius/2.0);
+                           radius / 2.0);
     CGContextAddArcToPoint(ctx,
                            arrowX, self.height - margin,
-                           arrowX - (attached * 3/2)/2.0, self.height - margin - attached,
-                           radius/2.0);
+                           arrowX - (attached * 3 / 2) / 2.0, self.height - margin - attached,
+                           radius / 2.0);
     CGContextAddArcToPoint(ctx,
-                           arrowX - (attached * 3/2)/2.0, self.height - margin - attached,
-                           arrowX - (attached * 3/2)/2.0 - 20, self.height - margin - attached,
-                           radius/2.0);
-    CGContextAddArcToPoint(ctx, 0 + margin, self.height - margin - attached, 0 + margin, self.height-20 - attached, radius);
+                           arrowX - (attached * 3 / 2) / 2.0, self.height - margin - attached,
+                           arrowX - (attached * 3 / 2) / 2.0 - 20, self.height - margin - attached,
+                           radius / 2.0);
+    CGContextAddArcToPoint(ctx, 0 + margin, self.height - margin - attached, 0 + margin, self.height - 20 - attached, radius);
     CGContextAddArcToPoint(ctx, 0 + margin, margin, self.width - 20, margin, radius);
     CGContextAddArcToPoint(ctx, self.width - margin, margin, self.width - margin, margin + 20.0, radius);
 }
 
+/// 计算箭头指向位置
 - (CGFloat)getArrowX {
     CGFloat arrowX = self.arrowPoint.x;
     if (self.arrowPoint.x == 0) {
@@ -156,10 +158,10 @@ typedef void((^DrawCompletion)());
 }
 
 - (void)removeView {
-    [self removeViewAnimated:YES];
+    [self dismissAnimation:YES];
 }
 
-- (void)removeViewAnimated:(BOOL)animated {
+- (void)dismissAnimation:(BOOL)animation {
     [self startAnimation:NO];
     POPSpringAnimation *scaleAimation = [self.layer pop_animationForKey:@"scaleAnimation"];
     scaleAimation.completionBlock = ^(POPAnimation *anim, BOOL finished) {
@@ -211,13 +213,15 @@ typedef void((^DrawCompletion)());
 + (KKPopTooltip *)showAtBarButtonItem:(UIBarButtonItem *)barButtonItem message:(NSString *)message arrowPosition:(TooltipArrowPosition)position {
     if (![barButtonItem isKindOfClass:[UIBarButtonItem class]]) {return nil; }
     UIView *targetView = (UIView *)[barButtonItem performSelector:@selector(view)];
-    UIView *targetSuperview = [targetView superview];
-    UIView *containerView = [targetSuperview superview];
-    if (nil == containerView) {
-        NSLog(@"Cannot determine container view from UIBarButtonItem: %@", barButtonItem);
-        return nil;
-    }
+    UIView *containerView = [UIApplication sharedApplication].keyWindow;
     return [self showPointingAtView:targetView inView:containerView message:message arrowPosition:position];
+}
+
++ (KKPopTooltip *)showAtBarButtonItem:(UIBarButtonItem *)barButtonItem contentView:(UIView *)contentView arrowPosition:(TooltipArrowPosition)position {
+    if (![barButtonItem isKindOfClass:[UIBarButtonItem class]]) {return nil; }
+    UIView *targetView = (UIView *)[barButtonItem performSelector:@selector(view)];
+    UIView *containerView = [UIApplication sharedApplication].keyWindow;
+    return [self showPointingAtView:targetView inView:containerView contentView:contentView arrowPosition:position];
 }
 
 + (KKPopTooltip *)showPointingAtView:(UIView *)targetView inView:(UIView *)containerView message:(NSString *)message arrowPosition:(TooltipArrowPosition)position {
@@ -231,10 +235,39 @@ typedef void((^DrawCompletion)());
     return [self showPointing:point inView:containerView message:message arrowPosition:position];
 }
 
-+ (KKPopTooltip *)showPointing:(CGPoint )point inView:(UIView *)containerView message:(NSString *)message arrowPosition:(TooltipArrowPosition)position {
++ (KKPopTooltip *)showPointingAtView:(UIView *)targetView inView:(UIView *)containerView contentView:(UIView *)contentView arrowPosition:(TooltipArrowPosition)position {
+    CGRect rect = [containerView convertRect:targetView.frame fromView:targetView.superview];
+    CGPoint point = CGPointZero;
+    if (position == TooltipArrowPositionTop) {
+        point = CGPointMake(rect.origin.x + rect.size.width/2, rect.origin.y + rect.size.height);
+    } else if (position == TooltipArrowPositionBottom) {
+        point = CGPointMake(rect.origin.x + rect.size.width/2, rect.origin.y);
+    }
+    return [self showPointing:point inView:containerView contentView:contentView arrowPosition:position];
+}
 
-    CGSize textSize = [message kk_getStringSizeWithStringFont:[UIFont boldSystemFontOfSize:16] withWidthOrHeight:KK_SCREEN_WIDTH - 30 isWidthFixed:YES];
-    CGSize tooltipSize = CGSizeMake(textSize.width + (textBorder + margin) * 2, textSize.height + (textBorder + margin) * 2 + attached);
++ (KKPopTooltip *)showPointing:(CGPoint )point inView:(UIView *)containerView message:(NSString *)message arrowPosition:(TooltipArrowPosition)position {
+    CGSize textSize = [message boundingRectWithSize:CGSizeMake(KK_SCREEN_WIDTH - 30 ,MAXFLOAT)
+                                            options:NSStringDrawingUsesLineFragmentOrigin
+                                         attributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:16]}
+                                            context:nil].size;
+    UILabel *textLabel = [[UILabel alloc] init];
+    CGRect frame = {0, 0, textSize.width, textSize.height};
+    textLabel.frame = frame;
+    textLabel.textColor = [UIColor colorWithWhite:0.2 alpha:1];
+    textLabel.font = [UIFont boldSystemFontOfSize:16];
+    textLabel.textAlignment = NSTextAlignmentCenter;
+    textLabel.backgroundColor = [UIColor clearColor];
+    textLabel.numberOfLines = 0;
+    textLabel.text = message;
+    return [self showPointing:point inView:containerView contentView:textLabel arrowPosition:position];
+}
+
++ (KKPopTooltip *)showPointing:(CGPoint )point inView:(UIView *)containerView contentView:(UIView *)contentView arrowPosition:(TooltipArrowPosition)position {
+    CGSize contentSize = contentView.frame.size;
+    CGRect contentRect = contentView.frame;
+    contentRect.origin.x = border + margin;
+    CGSize tooltipSize = CGSizeMake(contentSize.width + (border + margin) * 2, contentSize.height + (border + margin) * 2 + attached);
     CGRect rect = CGRectZero;
     CGFloat x = point.x - tooltipSize.width/2;
     if (x < 10) {
@@ -243,15 +276,17 @@ typedef void((^DrawCompletion)());
         x = KK_SCREEN_WIDTH - 10 - tooltipSize.width;
     }
     if (position == TooltipArrowPositionTop) {
+        contentRect.origin.y = border + margin + attached;
         rect = CGRectMake(x, point.y, tooltipSize.width, tooltipSize.height);
     } else if (position == TooltipArrowPositionBottom) {
+        contentRect.origin.y = border + margin;
         rect = CGRectMake(x, point.y - tooltipSize.height, tooltipSize.width, tooltipSize.height);
     }
-    
+    contentView.frame = contentRect;
     KKPopTooltip *tooltip = [[KKPopTooltip alloc]initWithFrame:rect position:position];
-    CGPoint arrowPoint = [containerView convertPoint:point toView:tooltip];//CGPointMake(point.x - x, point.y);
+    CGPoint arrowPoint = [containerView convertPoint:point toView:tooltip];
     tooltip.arrowPoint = arrowPoint;
-    tooltip.textLabel.text = message;
+    [tooltip addSubview:contentView];
     [tooltip showInView:containerView animation:YES];
     return tooltip;
 }

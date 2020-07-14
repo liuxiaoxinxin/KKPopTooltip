@@ -8,11 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <POP.h>
-#import "UIView+Size.h"
-#import "NSString+Category.h"
-#import "UIColor+Additions.h"
 
-/// 箭头位置方向.
+/// 箭头位置方向
 typedef NS_ENUM(NSInteger, TooltipArrowPosition) {
     TooltipArrowPositionTop,
     TooltipArrowPositionBottom
@@ -20,18 +17,21 @@ typedef NS_ENUM(NSInteger, TooltipArrowPosition) {
 
 @interface KKPopTooltip : UIView
 
-/// 指向UIBarButtonItem.
+/// 箭头指向UIBarButtonItem
 + (KKPopTooltip *)showAtBarButtonItem:(UIBarButtonItem *)barButtonItem message:(NSString *)message arrowPosition:(TooltipArrowPosition)position;
-/// 指向UIView.
++ (KKPopTooltip *)showAtBarButtonItem:(UIBarButtonItem *)barButtonItem contentView:(UIView *)contentView arrowPosition:(TooltipArrowPosition)position;
+/// 箭头指向UIView
 + (KKPopTooltip *)showPointingAtView:(UIView *)targetView inView:(UIView *)containerView message:(NSString *)message arrowPosition:(TooltipArrowPosition)position;
-/// 指向点.
++ (KKPopTooltip *)showPointingAtView:(UIView *)targetView inView:(UIView *)containerView contentView:(UIView *)contentView arrowPosition:(TooltipArrowPosition)position;
+/// 箭头指向CGPoint
 + (KKPopTooltip *)showPointing:(CGPoint)point inView:(UIView *)containerView message:(NSString *)message arrowPosition:(TooltipArrowPosition)position;
++ (KKPopTooltip *)showPointing:(CGPoint)point inView:(UIView *)containerView contentView:(UIView *)contentView arrowPosition:(TooltipArrowPosition)position;
 
 - (instancetype)initWithFrame:(CGRect)frame position:(TooltipArrowPosition)positin;
+
 @property (nonatomic, readonly, assign) TooltipArrowPosition arrowPosition;
-@property (nonatomic, readonly, strong) UILabel *textLabel;
 
 - (void)showInView:(UIView *)view animation:(BOOL)animation;
-- (void)removeViewAnimated:(BOOL)animated;
+- (void)dismissAnimation:(BOOL)animation;
 
 @end

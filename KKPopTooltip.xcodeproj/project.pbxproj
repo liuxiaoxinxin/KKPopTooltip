@@ -8,20 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		1265162C766962B767A81A4B /* libPods-KKPopTooltipUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E10DD763958CD247C416CBE6 /* libPods-KKPopTooltipUITests.a */; };
+		1A2AE27124BDCE8F00A579D4 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2AE26F24BDCE8F00A579D4 /* TestViewController.m */; };
+		1A2AE27224BDCE8F00A579D4 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A2AE27024BDCE8F00A579D4 /* TestViewController.xib */; };
 		1AE027311F288AB70077F5A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE027301F288AB70077F5A1 /* main.m */; };
 		1AE027341F288AB70077F5A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE027331F288AB70077F5A1 /* AppDelegate.m */; };
-		1AE027371F288AB70077F5A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE027361F288AB70077F5A1 /* ViewController.m */; };
-		1AE0273A1F288AB70077F5A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AE027381F288AB70077F5A1 /* Main.storyboard */; };
 		1AE0273C1F288AB70077F5A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AE0273B1F288AB70077F5A1 /* Assets.xcassets */; };
 		1AE0273F1F288AB70077F5A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AE0273D1F288AB70077F5A1 /* LaunchScreen.storyboard */; };
 		1AE0274A1F288AB70077F5A1 /* KKPopTooltipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE027491F288AB70077F5A1 /* KKPopTooltipTests.m */; };
 		1AE027551F288AB70077F5A1 /* KKPopTooltipUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE027541F288AB70077F5A1 /* KKPopTooltipUITests.m */; };
 		1AE027651F288AF10077F5A1 /* KKPopTooltip.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE027641F288AF10077F5A1 /* KKPopTooltip.m */; };
-		1AE027691F288C490077F5A1 /* UIView+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE027681F288C490077F5A1 /* UIView+Size.m */; };
-		1AE0276C1F288C560077F5A1 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE0276B1F288C560077F5A1 /* NSString+Category.m */; };
-		1AE0276F1F288D780077F5A1 /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE0276E1F288D780077F5A1 /* UIColor+Additions.m */; };
 		1AE027711F28916A0077F5A1 /* message@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE027701F28916A0077F5A1 /* message@2x.png */; };
-		1AE027731F2892A30077F5A1 /* photo_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE027721F2892A30077F5A1 /* photo_camera@2x.png */; };
+		1AE027731F2892A30077F5A1 /* photo_camera@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE027721F2892A30077F5A1 /* photo_camera@3x.png */; };
 		7DCEB915AB7DE6011907510E /* libPods-KKPopTooltipTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84010EE5486CA88FB0A48554 /* libPods-KKPopTooltipTests.a */; };
 		B26E440421FC04244D069057 /* libPods-KKPopTooltip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB360C38F1322C73C6D82E58 /* libPods-KKPopTooltip.a */; };
 /* End PBXBuildFile section */
@@ -45,13 +42,13 @@
 
 /* Begin PBXFileReference section */
 		14610AAE5CF5A475D4770185 /* Pods-KKPopTooltipUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKPopTooltipUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KKPopTooltipUITests/Pods-KKPopTooltipUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1A2AE26E24BDCE8F00A579D4 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		1A2AE26F24BDCE8F00A579D4 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		1A2AE27024BDCE8F00A579D4 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		1AE0272C1F288AB70077F5A1 /* KKPopTooltip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KKPopTooltip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE027301F288AB70077F5A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1AE027321F288AB70077F5A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1AE027331F288AB70077F5A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1AE027351F288AB70077F5A1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1AE027361F288AB70077F5A1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1AE027391F288AB70077F5A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1AE0273B1F288AB70077F5A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AE0273E1F288AB70077F5A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AE027401F288AB70077F5A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,14 +60,8 @@
 		1AE027561F288AB70077F5A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AE027631F288AF10077F5A1 /* KKPopTooltip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKPopTooltip.h; sourceTree = "<group>"; };
 		1AE027641F288AF10077F5A1 /* KKPopTooltip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKPopTooltip.m; sourceTree = "<group>"; };
-		1AE027671F288C490077F5A1 /* UIView+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Size.h"; sourceTree = "<group>"; };
-		1AE027681F288C490077F5A1 /* UIView+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Size.m"; sourceTree = "<group>"; };
-		1AE0276A1F288C560077F5A1 /* NSString+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
-		1AE0276B1F288C560077F5A1 /* NSString+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
-		1AE0276D1F288D780077F5A1 /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
-		1AE0276E1F288D780077F5A1 /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
 		1AE027701F28916A0077F5A1 /* message@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message@2x.png"; sourceTree = "<group>"; };
-		1AE027721F2892A30077F5A1 /* photo_camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo_camera@2x.png"; sourceTree = "<group>"; };
+		1AE027721F2892A30077F5A1 /* photo_camera@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo_camera@3x.png"; sourceTree = "<group>"; };
 		4FC723E0DB75AC152F193D91 /* Pods-KKPopTooltipTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKPopTooltipTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KKPopTooltipTests/Pods-KKPopTooltipTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6E2BDA2B719C8BBAF0706EE5 /* Pods-KKPopTooltipUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKPopTooltipUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KKPopTooltipUITests/Pods-KKPopTooltipUITests.release.xcconfig"; sourceTree = "<group>"; };
 		75773D7345E49AE573194E36 /* Pods-KKPopTooltip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKPopTooltip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KKPopTooltip/Pods-KKPopTooltip.debug.xcconfig"; sourceTree = "<group>"; };
@@ -147,13 +138,13 @@
 				1AE027621F288ADD0077F5A1 /* KKPopTooltip */,
 				1AE027321F288AB70077F5A1 /* AppDelegate.h */,
 				1AE027331F288AB70077F5A1 /* AppDelegate.m */,
-				1AE027351F288AB70077F5A1 /* ViewController.h */,
-				1AE027361F288AB70077F5A1 /* ViewController.m */,
-				1AE027381F288AB70077F5A1 /* Main.storyboard */,
+				1A2AE26E24BDCE8F00A579D4 /* TestViewController.h */,
+				1A2AE26F24BDCE8F00A579D4 /* TestViewController.m */,
+				1A2AE27024BDCE8F00A579D4 /* TestViewController.xib */,
 				1AE0273B1F288AB70077F5A1 /* Assets.xcassets */,
 				1AE0273D1F288AB70077F5A1 /* LaunchScreen.storyboard */,
 				1AE027701F28916A0077F5A1 /* message@2x.png */,
-				1AE027721F2892A30077F5A1 /* photo_camera@2x.png */,
+				1AE027721F2892A30077F5A1 /* photo_camera@3x.png */,
 				1AE027401F288AB70077F5A1 /* Info.plist */,
 				1AE0272F1F288AB70077F5A1 /* Supporting Files */,
 			);
@@ -189,24 +180,10 @@
 		1AE027621F288ADD0077F5A1 /* KKPopTooltip */ = {
 			isa = PBXGroup;
 			children = (
-				1AE027661F288C360077F5A1 /* Tool */,
 				1AE027631F288AF10077F5A1 /* KKPopTooltip.h */,
 				1AE027641F288AF10077F5A1 /* KKPopTooltip.m */,
 			);
 			path = KKPopTooltip;
-			sourceTree = "<group>";
-		};
-		1AE027661F288C360077F5A1 /* Tool */ = {
-			isa = PBXGroup;
-			children = (
-				1AE0276D1F288D780077F5A1 /* UIColor+Additions.h */,
-				1AE0276E1F288D780077F5A1 /* UIColor+Additions.m */,
-				1AE0276A1F288C560077F5A1 /* NSString+Category.h */,
-				1AE0276B1F288C560077F5A1 /* NSString+Category.m */,
-				1AE027671F288C490077F5A1 /* UIView+Size.h */,
-				1AE027681F288C490077F5A1 /* UIView+Size.m */,
-			);
-			path = Tool;
 			sourceTree = "<group>";
 		};
 		54E991952EDC09881E9E6D5E /* Pods */ = {
@@ -233,8 +210,6 @@
 				1AE027281F288AB70077F5A1 /* Sources */,
 				1AE027291F288AB70077F5A1 /* Frameworks */,
 				1AE0272A1F288AB70077F5A1 /* Resources */,
-				17BFB022D85177BB7CD1817C /* [CP] Embed Pods Frameworks */,
-				274D958CE9262B3E04E46FAE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,8 +228,6 @@
 				1AE027411F288AB70077F5A1 /* Sources */,
 				1AE027421F288AB70077F5A1 /* Frameworks */,
 				1AE027431F288AB70077F5A1 /* Resources */,
-				1C39C160A71EF6469DAE0C84 /* [CP] Embed Pods Frameworks */,
-				EEF30BA4A3C15010F0271555 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -274,8 +247,6 @@
 				1AE0274C1F288AB70077F5A1 /* Sources */,
 				1AE0274D1F288AB70077F5A1 /* Frameworks */,
 				1AE0274E1F288AB70077F5A1 /* Resources */,
-				432554A5335A577F32777FB7 /* [CP] Embed Pods Frameworks */,
-				25D57FF857FC18EE7A2EAE17 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -298,7 +269,7 @@
 				TargetAttributes = {
 					1AE0272B1F288AB70077F5A1 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 3H8ZE4PK9A;
+						DevelopmentTeam = PZN4E4LRFY;
 						ProvisioningStyle = Automatic;
 					};
 					1AE027441F288AB70077F5A1 = {
@@ -320,6 +291,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -343,8 +315,8 @@
 				1AE027711F28916A0077F5A1 /* message@2x.png in Resources */,
 				1AE0273F1F288AB70077F5A1 /* LaunchScreen.storyboard in Resources */,
 				1AE0273C1F288AB70077F5A1 /* Assets.xcassets in Resources */,
-				1AE0273A1F288AB70077F5A1 /* Main.storyboard in Resources */,
-				1AE027731F2892A30077F5A1 /* photo_camera@2x.png in Resources */,
+				1A2AE27224BDCE8F00A579D4 /* TestViewController.xib in Resources */,
+				1AE027731F2892A30077F5A1 /* photo_camera@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,94 +337,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		17BFB022D85177BB7CD1817C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KKPopTooltip/Pods-KKPopTooltip-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1C39C160A71EF6469DAE0C84 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KKPopTooltipTests/Pods-KKPopTooltipTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		25D57FF857FC18EE7A2EAE17 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KKPopTooltipUITests/Pods-KKPopTooltipUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		274D958CE9262B3E04E46FAE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KKPopTooltip/Pods-KKPopTooltip-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		432554A5335A577F32777FB7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KKPopTooltipUITests/Pods-KKPopTooltipUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		59FBC01166B90A230801B2BE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KKPopTooltip-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AE1FAFEA0C7AEE57AC2E08B3 /* [CP] Check Pods Manifest.lock */ = {
@@ -461,13 +361,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KKPopTooltipUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C1A60F6ED8BDC6AA3E30C550 /* [CP] Check Pods Manifest.lock */ = {
@@ -476,28 +379,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KKPopTooltipTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		EEF30BA4A3C15010F0271555 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KKPopTooltipTests/Pods-KKPopTooltipTests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -507,12 +398,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AE027371F288AB70077F5A1 /* ViewController.m in Sources */,
-				1AE0276F1F288D780077F5A1 /* UIColor+Additions.m in Sources */,
-				1AE0276C1F288C560077F5A1 /* NSString+Category.m in Sources */,
-				1AE027691F288C490077F5A1 /* UIView+Size.m in Sources */,
 				1AE027651F288AF10077F5A1 /* KKPopTooltip.m in Sources */,
 				1AE027341F288AB70077F5A1 /* AppDelegate.m in Sources */,
+				1A2AE27124BDCE8F00A579D4 /* TestViewController.m in Sources */,
 				1AE027311F288AB70077F5A1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,14 +437,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1AE027381F288AB70077F5A1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1AE027391F288AB70077F5A1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1AE0273D1F288AB70077F5A1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -665,8 +545,9 @@
 			baseConfigurationReference = 75773D7345E49AE573194E36 /* Pods-KKPopTooltip.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3H8ZE4PK9A;
+				DEVELOPMENT_TEAM = PZN4E4LRFY;
 				INFOPLIST_FILE = KKPopTooltip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liujixin.KKPopTooltip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -678,8 +559,9 @@
 			baseConfigurationReference = B295E65CA489B7EB7722F3B7 /* Pods-KKPopTooltip.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3H8ZE4PK9A;
+				DEVELOPMENT_TEAM = PZN4E4LRFY;
 				INFOPLIST_FILE = KKPopTooltip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liujixin.KKPopTooltip;
 				PRODUCT_NAME = "$(TARGET_NAME)";

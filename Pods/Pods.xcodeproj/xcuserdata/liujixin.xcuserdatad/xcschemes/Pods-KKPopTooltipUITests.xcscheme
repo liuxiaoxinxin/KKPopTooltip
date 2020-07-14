@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'B3F7DE7909CEB5FDFE45CA25F3ACE8C9'
-               BlueprintName = 'Pods-KKPopTooltipUITests'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-KKPopTooltipUITests.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AF2E14EEBA6DDB610AAF0A6311E295EC"
+               BuildableName = "libPods-KKPopTooltipUITests.a"
+               BlueprintName = "Pods-KKPopTooltipUITests"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
