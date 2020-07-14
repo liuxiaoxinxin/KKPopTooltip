@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <POP.h>
+#import <pop/POP.h>
 
 /// 箭头位置方向
 typedef NS_ENUM(NSInteger, TooltipArrowPosition) {

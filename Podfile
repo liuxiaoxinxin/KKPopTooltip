@@ -7,6 +7,7 @@ target 'KKPopTooltip' do
 
     pod 'pop', '~> 1.0'
     pod 'DZNEmptyDataSet'
+    pod 'KKPopTooltip', :path => 'KKPopTooltip.podspec'
 
   # Pods for KKPopTooltip
 

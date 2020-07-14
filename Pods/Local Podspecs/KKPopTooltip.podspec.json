@@ -1,0 +1,23 @@
+{
+  "name": "KKPopTooltip",
+  "version": "0.0.2",
+  "summary": "弹出气泡",
+  "description": "一个漂亮的圆角气泡，用来新手引导、操作提示",
+  "homepage": "https://github.com/liuxiaoxinxin/KKPopTooltip",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "liujixin": "liujixin054@tops001.com"
+  },
+  "source": {
+    "git": "https://github.com/liuxiaoxinxin/KKPopTooltip.git",
+    "tag": "0.0.2"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "Source/**",
+  "resources": "Source/Assets/*"
+}

@@ -28,7 +28,7 @@
 		321C501B63AA1B55A6341038AFB6E233 /* POPCGUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 07E610419644BEDA5856AC985AC587F0 /* POPCGUtils.mm */; };
 		3260D29E84D2C4F4ECDBC3737DFA0B48 /* POPDecayAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C66829AA9B46E9EA9B6444E31878AF /* POPDecayAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		36D5D3764DDD3421755A5EA548953DCA /* POPAnimationTracer.mm in Sources */ = {isa = PBXBuildFile; fileRef = C4C4A0E7AEB8DEEBB150327E9BBE4C46 /* POPAnimationTracer.mm */; };
-		396F455CB683F1FAD9088051F3CB4D6C /* Pods-KKPopTooltip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5F2A9B2BC6B508287890B7587068DD /* Pods-KKPopTooltip-dummy.m */; };
+		3B3B51828823C9B305F299AFDFB2497F /* Pods-KKPopTooltip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5F2A9B2BC6B508287890B7587068DD /* Pods-KKPopTooltip-dummy.m */; };
 		3D4D5E232F9F84E9010925CD90E198B8 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C0DEE1F18A92B6D32ABA4D3D7CFAA1 /* UIScrollView+EmptyDataSet.m */; };
 		44578EC614929DAF1C8679A6942A83AD /* POPAnimationTracer.h in Headers */ = {isa = PBXBuildFile; fileRef = 39ABBFDD78825CEE81F60BC1F32A45B3 /* POPAnimationTracer.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4B36E9B35804DD6E1DAFA37974631667 /* POPAnimationPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FF8CAC60E3817DFDF40D4FA8C55C76F /* POPAnimationPrivate.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -50,12 +50,15 @@
 		8481A58861EE4DF5B7DA49B4143F1D64 /* Pods-KKPopTooltipUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5795E6293BEE10F0C32DC647323D540D /* Pods-KKPopTooltipUITests-dummy.m */; };
 		96C02A9069C32A34ECEB86CD4F062FFC /* TransformationMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DDB62605ADE66285683FAF2E92209935 /* TransformationMatrix.cpp */; };
 		96DFEAC99770671D161DD4A4E0C41F19 /* POPVector.h in Headers */ = {isa = PBXBuildFile; fileRef = A03101FFDED878C78B117ED2E84BFC99 /* POPVector.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9E5E6A0C6D43F831F9DD96CEFA25F051 /* KKPopTooltip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C42A638B3CCF8BCCB7FD1A0F5F79FD /* KKPopTooltip-dummy.m */; };
 		A0D700CB98FDAEA8B4666960C66FD033 /* POPDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = A29B437B9F8828DAED166B24BBE9B102 /* POPDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		ABF5A66B957492C0965E54462609D761 /* POPBasicAnimation.mm in Sources */ = {isa = PBXBuildFile; fileRef = C95FB21B0FDC22755DEE70B837890C75 /* POPBasicAnimation.mm */; };
 		B4693B72F6BCB453DE8C722ACC9210E9 /* POPPropertyAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = B322634F8C83D835F2DE1D17708D5739 /* POPPropertyAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B4ADED6435FCF419DB606B7808442F59 /* POPAnimationExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = 835E67C72FE41A7A2C2D7DD15A6308BA /* POPAnimationExtras.mm */; };
 		BF04272E8BF463EEA18D48C60C7B96D0 /* POPAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 00A59151531DD737B5D1B2439572F5AE /* POPAction.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C374C7D61445A4BE973F994761222D4F /* POPLayerExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = FD55DB47BAA540AD7E8796DBC384B213 /* POPLayerExtras.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C78FBC9808EA62417B714EAF15F4831A /* KKPopTooltip.m in Sources */ = {isa = PBXBuildFile; fileRef = F2306C637AE34E032F6D58D54765405A /* KKPopTooltip.m */; };
+		C9651E0049CB609525E35A4D284C3344 /* KKPopTooltip.h in Headers */ = {isa = PBXBuildFile; fileRef = 0056F01DED59ED7885A1FAA5517EB35C /* KKPopTooltip.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CB2AC08E92BCA8D3A743C26B93AC655B /* POPAnimationExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = 64323D592EBAE7B59E4CC1AAEAFFCBD6 /* POPAnimationExtras.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D06AE4FFE65FAB56A9FCBCDE45A0DE7C /* POPGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = ED34FE95DDAACFE34DD088588B16E787 /* POPGeometry.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D4D56346B205B649E037AC5514DE5C0F /* POPVector.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF96F5A64488AEF14DD911D9EF5497BA /* POPVector.mm */; };
@@ -69,19 +72,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		28426D649E6475CC3BF2F7EB2BABD9BA /* PBXContainerItemProxy */ = {
+		1D6968B9DA1CF6E498F4B863D8DD2051 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0483D7F620C992E5C4BD62A7266EABB4;
+			remoteInfo = pop;
+		};
+		8560F143D472D540856254C2C1BF2780 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F1BCD9702276377FB5B3BDB6EAF709D7;
 			remoteInfo = DZNEmptyDataSet;
 		};
-		423A4F7904D1336AFC184FA1CAAB07EC /* PBXContainerItemProxy */ = {
+		86D4D4EB1F4B75F990EA8554A9DAC788 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0483D7F620C992E5C4BD62A7266EABB4;
-			remoteInfo = pop;
+			remoteGlobalIDString = 1599B5FD0A2020E13EF27C2B44D93B40;
+			remoteInfo = KKPopTooltip;
 		};
 		D26BD6AA657A01DA138A19463040642B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -100,13 +110,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0056F01DED59ED7885A1FAA5517EB35C /* KKPopTooltip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKPopTooltip.h; path = Source/KKPopTooltip.h; sourceTree = "<group>"; };
 		00A59151531DD737B5D1B2439572F5AE /* POPAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAction.h; path = pop/POPAction.h; sourceTree = "<group>"; };
+		059524B4AAB2007061A9A14EF5E5450F /* KKPopTooltip.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = KKPopTooltip.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		073F4F5561200D469D884A86DA6DCB24 /* TransformationMatrix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TransformationMatrix.h; path = pop/WebCore/TransformationMatrix.h; sourceTree = "<group>"; };
 		07E610419644BEDA5856AC985AC587F0 /* POPCGUtils.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPCGUtils.mm; path = pop/POPCGUtils.mm; sourceTree = "<group>"; };
+		0A2DB82D70E7271DD9EE4FF5EC7C134D /* KKPopTooltip-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KKPopTooltip-prefix.pch"; sourceTree = "<group>"; };
 		0AACEF07F8A5E9BF0BE2DC703BFF1E00 /* POPSpringSolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringSolver.h; path = pop/POPSpringSolver.h; sourceTree = "<group>"; };
 		0B943B2EE069D1F8A396BCE149AFCD56 /* pop-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "pop-prefix.pch"; sourceTree = "<group>"; };
 		0F0E137790CDE03F3D7300061446D596 /* Pods-KKPopTooltipTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KKPopTooltipTests-dummy.m"; sourceTree = "<group>"; };
 		0FF8CAC60E3817DFDF40D4FA8C55C76F /* POPAnimationPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationPrivate.h; path = pop/POPAnimationPrivate.h; sourceTree = "<group>"; };
+		117D90FB6100C6766A8E589DDAC03C98 /* KKPopTooltip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KKPopTooltip.debug.xcconfig; sourceTree = "<group>"; };
 		1746FA755E43AE47C150E7A32FE59D48 /* POPAnimator.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimator.mm; path = pop/POPAnimator.mm; sourceTree = "<group>"; };
 		1E09F6962651A051159202C403F3A4DC /* pop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "pop-dummy.m"; sourceTree = "<group>"; };
 		239AB20BD0D4F2282A34BA3E759AA1C7 /* POPLayerExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPLayerExtras.mm; path = pop/POPLayerExtras.mm; sourceTree = "<group>"; };
@@ -128,6 +142,7 @@
 		57151ED98ED897301649A1BB88C5F4DA /* Pods-KKPopTooltip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKPopTooltip.release.xcconfig"; sourceTree = "<group>"; };
 		5795E6293BEE10F0C32DC647323D540D /* Pods-KKPopTooltipUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KKPopTooltipUITests-dummy.m"; sourceTree = "<group>"; };
 		59DE4A8FAC76826D583A1AF070CDD072 /* POPMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPMath.h; path = pop/POPMath.h; sourceTree = "<group>"; };
+		5A158B81C1AA2856F983F5230A2D7321 /* libKKPopTooltip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libKKPopTooltip.a; path = libKKPopTooltip.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B1C0741409AB2DBED5FDE05EE939D66 /* POPAnimationEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationEvent.h; path = pop/POPAnimationEvent.h; sourceTree = "<group>"; };
 		5DA4577FE3BC4A03751108FFED07B385 /* libDZNEmptyDataSet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libDZNEmptyDataSet.a; path = libDZNEmptyDataSet.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		64323D592EBAE7B59E4CC1AAEAFFCBD6 /* POPAnimationExtras.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationExtras.h; path = pop/POPAnimationExtras.h; sourceTree = "<group>"; };
@@ -150,11 +165,13 @@
 		9DFCB162ACB0ECA651274AF2903ED301 /* Pods-KKPopTooltip-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KKPopTooltip-acknowledgements.plist"; sourceTree = "<group>"; };
 		A03101FFDED878C78B117ED2E84BFC99 /* POPVector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPVector.h; path = pop/POPVector.h; sourceTree = "<group>"; };
 		A29B437B9F8828DAED166B24BBE9B102 /* POPDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDefines.h; path = pop/POPDefines.h; sourceTree = "<group>"; };
+		A4031C7EC4781E091ADC086AC0104BC6 /* KKPopTooltip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KKPopTooltip.release.xcconfig; sourceTree = "<group>"; };
 		A5762BF827DF64D36F7C036AE7281490 /* DZNEmptyDataSet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DZNEmptyDataSet.debug.xcconfig; sourceTree = "<group>"; };
 		A602BF7C644700CC25A1E3257E66F14D /* POPCGUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPCGUtils.h; path = pop/POPCGUtils.h; sourceTree = "<group>"; };
 		AE5FE77471401BDE1DFDABBB267FE953 /* POPSpringAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPSpringAnimation.mm; path = pop/POPSpringAnimation.mm; sourceTree = "<group>"; };
 		B0C9A543F07040A18D8E6DA94E7F5BAA /* POPAnimatableProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimatableProperty.h; path = pop/POPAnimatableProperty.h; sourceTree = "<group>"; };
 		B322634F8C83D835F2DE1D17708D5739 /* POPPropertyAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPPropertyAnimation.h; path = pop/POPPropertyAnimation.h; sourceTree = "<group>"; };
+		B8C42A638B3CCF8BCCB7FD1A0F5F79FD /* KKPopTooltip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KKPopTooltip-dummy.m"; sourceTree = "<group>"; };
 		BE8B5B47AB9E6B0DAB81B1074603CFD1 /* pop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = pop.release.xcconfig; sourceTree = "<group>"; };
 		C0F39A0EE9557BA61D6DC87A18AD614A /* POPAnimationEvent.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationEvent.mm; path = pop/POPAnimationEvent.mm; sourceTree = "<group>"; };
 		C2511DB835D62D0F6FBF7C50569E4CAE /* POPAnimatablePropertyTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimatablePropertyTypes.h; path = pop/POPAnimatablePropertyTypes.h; sourceTree = "<group>"; };
@@ -178,22 +195,24 @@
 		E2C66829AA9B46E9EA9B6444E31878AF /* POPDecayAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDecayAnimation.h; path = pop/POPDecayAnimation.h; sourceTree = "<group>"; };
 		E410F087EDA6EE16E8BDB4BB5F88CCB2 /* FloatConversion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FloatConversion.h; path = pop/WebCore/FloatConversion.h; sourceTree = "<group>"; };
 		E6E3C38EB498979816164B3F0C303A8B /* POPGeometry.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPGeometry.mm; path = pop/POPGeometry.mm; sourceTree = "<group>"; };
+		E87C05D7E32EC585106972EE77ACDCA3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		ED34FE95DDAACFE34DD088588B16E787 /* POPGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPGeometry.h; path = pop/POPGeometry.h; sourceTree = "<group>"; };
 		EF397AE58164602DD5DEEB3BAE911979 /* POPMath.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPMath.mm; path = pop/POPMath.mm; sourceTree = "<group>"; };
+		F2306C637AE34E032F6D58D54765405A /* KKPopTooltip.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KKPopTooltip.m; path = Source/KKPopTooltip.m; sourceTree = "<group>"; };
 		F78125298362690C72BD2E323904F700 /* POPPropertyAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPPropertyAnimation.mm; path = pop/POPPropertyAnimation.mm; sourceTree = "<group>"; };
 		FD55DB47BAA540AD7E8796DBC384B213 /* POPLayerExtras.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPLayerExtras.h; path = pop/POPLayerExtras.h; sourceTree = "<group>"; };
 		FFA79E565AF3A09868AAE7E1470AB8BC /* POPAnimationInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationInternal.h; path = pop/POPAnimationInternal.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1AA350D2091E1B68399AC9721B3C4A5F /* Frameworks */ = {
+		30FE731B91ED608342E6020B56959B60 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		30FE731B91ED608342E6020B56959B60 /* Frameworks */ = {
+		6B1EBC791F756971B7BAAE38A1980E33 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -221,9 +240,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8148857AA7A2D68D27B74A08A58A3C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E4D057748F688F93D503A4BDE43EDC8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8C42A638B3CCF8BCCB7FD1A0F5F79FD /* KKPopTooltip-dummy.m */,
+				0A2DB82D70E7271DD9EE4FF5EC7C134D /* KKPopTooltip-prefix.pch */,
+				117D90FB6100C6766A8E589DDAC03C98 /* KKPopTooltip.debug.xcconfig */,
+				A4031C7EC4781E091ADC086AC0104BC6 /* KKPopTooltip.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Pods/Target Support Files/KKPopTooltip";
+			sourceTree = "<group>";
+		};
+		12B570D5BF9D8E0E0A61C3289B984F42 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AD08167BC090861A8600669E1CD5FAA /* KKPopTooltip */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		16004BA1FD3C80B0F8906A34D7A71791 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +280,18 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/pop";
+			sourceTree = "<group>";
+		};
+		1AD08167BC090861A8600669E1CD5FAA /* KKPopTooltip */ = {
+			isa = PBXGroup;
+			children = (
+				0056F01DED59ED7885A1FAA5517EB35C /* KKPopTooltip.h */,
+				F2306C637AE34E032F6D58D54765405A /* KKPopTooltip.m */,
+				7320476C137996F06DF18C424D8905EB /* Pod */,
+				0E4D057748F688F93D503A4BDE43EDC8 /* Support Files */,
+			);
+			name = KKPopTooltip;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		1C3097A0EA03C2D2D67E2806B3818FF0 /* Pods-KKPopTooltipUITests */ = {
@@ -247,18 +305,6 @@
 			);
 			name = "Pods-KKPopTooltipUITests";
 			path = "Target Support Files/Pods-KKPopTooltipUITests";
-			sourceTree = "<group>";
-		};
-		1C6585AB39EC1AAB44FE38A75F4262A6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5DA4577FE3BC4A03751108FFED07B385 /* libDZNEmptyDataSet.a */,
-				8B5C46FC25CB982CC8FD9DE065029790 /* libPods-KKPopTooltip.a */,
-				7AABFEB17387085258F60F2109FCCA9C /* libPods-KKPopTooltipTests.a */,
-				3E3D4BB1A640504B8C025A0A71FEF3BC /* libPods-KKPopTooltipUITests.a */,
-				51305B2D9D8DA36D89CC277D729083D2 /* libpop.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		2A7769780C7C94D170D7127EBF349637 /* Pods-KKPopTooltip */ = {
@@ -356,6 +402,15 @@
 			path = "../Target Support Files/DZNEmptyDataSet";
 			sourceTree = "<group>";
 		};
+		7320476C137996F06DF18C424D8905EB /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				059524B4AAB2007061A9A14EF5E5450F /* KKPopTooltip.podspec */,
+				E87C05D7E32EC585106972EE77ACDCA3 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		8756D3DCD4C9CA2CF318A178F9623F94 /* Pods-KKPopTooltipTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -380,13 +435,27 @@
 			path = DZNEmptyDataSet;
 			sourceTree = "<group>";
 		};
+		BF829E02EFA217D05559C59212879F99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DA4577FE3BC4A03751108FFED07B385 /* libDZNEmptyDataSet.a */,
+				5A158B81C1AA2856F983F5230A2D7321 /* libKKPopTooltip.a */,
+				8B5C46FC25CB982CC8FD9DE065029790 /* libPods-KKPopTooltip.a */,
+				7AABFEB17387085258F60F2109FCCA9C /* libPods-KKPopTooltipTests.a */,
+				3E3D4BB1A640504B8C025A0A71FEF3BC /* libPods-KKPopTooltipUITests.a */,
+				51305B2D9D8DA36D89CC277D729083D2 /* libpop.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				12B570D5BF9D8E0E0A61C3289B984F42 /* Development Pods */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
 				58E70B2A7E2EE1FE1F79BF706AA4C531 /* Pods */,
-				1C6585AB39EC1AAB44FE38A75F4262A6 /* Products */,
+				BF829E02EFA217D05559C59212879F99 /* Products */,
 				F46620BF22E79E01499BA79266CDEC92 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -415,6 +484,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62D4B18B0AB30B84CCBD21AC7BD82B0B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9651E0049CB609525E35A4D284C3344 /* KKPopTooltip.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,14 +544,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9CE20D4CB0D9E6292449AD0F323BB74 /* Headers */ = {
+		A9D2578F503CE4231CF3A753B522F47E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9D2578F503CE4231CF3A753B522F47E /* Headers */ = {
+		F1B86A39E609AC2A455179BE54759F07 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -499,6 +576,23 @@
 			name = pop;
 			productName = pop;
 			productReference = 51305B2D9D8DA36D89CC277D729083D2 /* libpop.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1599B5FD0A2020E13EF27C2B44D93B40 /* KKPopTooltip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EF19D5975FD83E0D212BD4EAA3EC028 /* Build configuration list for PBXNativeTarget "KKPopTooltip" */;
+			buildPhases = (
+				62D4B18B0AB30B84CCBD21AC7BD82B0B /* Headers */,
+				3748E1B53555E6CA1133BBB1CBC0C012 /* Sources */,
+				E8148857AA7A2D68D27B74A08A58A3C4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KKPopTooltip;
+			productName = KKPopTooltip;
+			productReference = 5A158B81C1AA2856F983F5230A2D7321 /* libKKPopTooltip.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		AF2E14EEBA6DDB610AAF0A6311E295EC /* Pods-KKPopTooltipUITests */ = {
@@ -556,17 +650,18 @@
 		};
 		FE6987557474B2069CB77D390F9B7B2E /* Pods-KKPopTooltip */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 409465B9CCD3A1C76574FAD77CD7561E /* Build configuration list for PBXNativeTarget "Pods-KKPopTooltip" */;
+			buildConfigurationList = 681B7803C6DDFC3B97EE7A5EC4FAD6E7 /* Build configuration list for PBXNativeTarget "Pods-KKPopTooltip" */;
 			buildPhases = (
-				A9CE20D4CB0D9E6292449AD0F323BB74 /* Headers */,
-				6DE12BE1F8FBA7811587A0DE2ABB9FC1 /* Sources */,
-				1AA350D2091E1B68399AC9721B3C4A5F /* Frameworks */,
+				F1B86A39E609AC2A455179BE54759F07 /* Headers */,
+				3C4D05D7027438E7447750143626499D /* Sources */,
+				6B1EBC791F756971B7BAAE38A1980E33 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				394FE41DCD5C119971A277D1E30DF137 /* PBXTargetDependency */,
-				B8DC715500B77A42CAE8E36A88B00839 /* PBXTargetDependency */,
+				399EB72E14E2FBFF8A7B012B75DB1F7A /* PBXTargetDependency */,
+				852DB275D2ED8CDAD559240D782CAC5E /* PBXTargetDependency */,
+				815D3E8B3ADEE5FC216F0C3673E7D215 /* PBXTargetDependency */,
 			);
 			name = "Pods-KKPopTooltip";
 			productName = "Pods-KKPopTooltip";
@@ -591,11 +686,12 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 1C6585AB39EC1AAB44FE38A75F4262A6 /* Products */;
+			productRefGroup = BF829E02EFA217D05559C59212879F99 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				F1BCD9702276377FB5B3BDB6EAF709D7 /* DZNEmptyDataSet */,
+				1599B5FD0A2020E13EF27C2B44D93B40 /* KKPopTooltip */,
 				FE6987557474B2069CB77D390F9B7B2E /* Pods-KKPopTooltip */,
 				CB4C42C1775F709E53E5A46A78DF452C /* Pods-KKPopTooltipTests */,
 				AF2E14EEBA6DDB610AAF0A6311E295EC /* Pods-KKPopTooltipUITests */,
@@ -631,11 +727,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6DE12BE1F8FBA7811587A0DE2ABB9FC1 /* Sources */ = {
+		3748E1B53555E6CA1133BBB1CBC0C012 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				396F455CB683F1FAD9088051F3CB4D6C /* Pods-KKPopTooltip-dummy.m in Sources */,
+				9E5E6A0C6D43F831F9DD96CEFA25F051 /* KKPopTooltip-dummy.m in Sources */,
+				C78FBC9808EA62417B714EAF15F4831A /* KKPopTooltip.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C4D05D7027438E7447750143626499D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B3B51828823C9B305F299AFDFB2497F /* Pods-KKPopTooltip-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,11 +772,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		394FE41DCD5C119971A277D1E30DF137 /* PBXTargetDependency */ = {
+		399EB72E14E2FBFF8A7B012B75DB1F7A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DZNEmptyDataSet;
 			target = F1BCD9702276377FB5B3BDB6EAF709D7 /* DZNEmptyDataSet */;
-			targetProxy = 28426D649E6475CC3BF2F7EB2BABD9BA /* PBXContainerItemProxy */;
+			targetProxy = 8560F143D472D540856254C2C1BF2780 /* PBXContainerItemProxy */;
 		};
 		651482ACB471E5EA1CBF29F01902ADC7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -679,21 +784,48 @@
 			target = FE6987557474B2069CB77D390F9B7B2E /* Pods-KKPopTooltip */;
 			targetProxy = D26BD6AA657A01DA138A19463040642B /* PBXContainerItemProxy */;
 		};
+		815D3E8B3ADEE5FC216F0C3673E7D215 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pop;
+			target = 0483D7F620C992E5C4BD62A7266EABB4 /* pop */;
+			targetProxy = 1D6968B9DA1CF6E498F4B863D8DD2051 /* PBXContainerItemProxy */;
+		};
+		852DB275D2ED8CDAD559240D782CAC5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KKPopTooltip;
+			target = 1599B5FD0A2020E13EF27C2B44D93B40 /* KKPopTooltip */;
+			targetProxy = 86D4D4EB1F4B75F990EA8554A9DAC788 /* PBXContainerItemProxy */;
+		};
 		ACE06940B274B6007D5E1525F1FE6B51 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-KKPopTooltip";
 			target = FE6987557474B2069CB77D390F9B7B2E /* Pods-KKPopTooltip */;
 			targetProxy = DC3C4A3904993508326731BE050768C0 /* PBXContainerItemProxy */;
 		};
-		B8DC715500B77A42CAE8E36A88B00839 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = pop;
-			target = 0483D7F620C992E5C4BD62A7266EABB4 /* pop */;
-			targetProxy = 423A4F7904D1336AFC184FA1CAAB07EC /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		098582882D42230856C25E8D0C827288 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D80D7DFBEBA49D341FE2921D0D0694D2 /* Pods-KKPopTooltipTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		0D0016D1CFFE8B853BBDB776D0E142AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A5762BF827DF64D36F7C036AE7281490 /* DZNEmptyDataSet.debug.xcconfig */;
@@ -717,7 +849,157 @@
 			};
 			name = Debug;
 		};
-		2F5CE9157A6944C572608740FA41A6A5 /* Debug */ = {
+		50A87A63FD545EA21299CF39B0D63198 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57151ED98ED897301649A1BB88C5F4DA /* Pods-KKPopTooltip.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		538ACF8E80D5CADBF95E59E01CE60B03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE8B5B47AB9E6B0DAB81B1074603CFD1 /* pop.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/pop/pop-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = pop;
+				PRODUCT_NAME = pop;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6421D7230F8944B6074DFEA5DFAD084F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 117D90FB6100C6766A8E589DDAC03C98 /* KKPopTooltip.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/KKPopTooltip/KKPopTooltip-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = KKPopTooltip;
+				PRODUCT_NAME = KKPopTooltip;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7C7BBA7EF152AC83A0ABE25843CE61A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82E7AED26ED61D63955567D54C87F643 /* Pods-KKPopTooltipUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -768,7 +1050,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -781,87 +1063,16 @@
 			};
 			name = Debug;
 		};
-		538ACF8E80D5CADBF95E59E01CE60B03 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE8B5B47AB9E6B0DAB81B1074603CFD1 /* pop.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/pop/pop-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = pop;
-				PRODUCT_NAME = pop;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		67C84A5AC69F3DDB32F3954A757F7FDA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57151ED98ED897301649A1BB88C5F4DA /* Pods-KKPopTooltip.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		689F0501F83D418B7B347FFE64943E1D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8632EA270AA71A27D54084BDDB35E1C3 /* Pods-KKPopTooltipUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		92B08354263CDFD6F607BF4CD32DF7B5 /* Debug */ = {
+		A4C9182EB522786553DC9F5CA1E2509E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2A5A766897CC9201227C38CE21DB2F9F /* Pods-KKPopTooltip.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -873,63 +1084,49 @@
 			};
 			name = Debug;
 		};
-		B102853BB3392A16E68667C38114BC6A /* Release */ = {
+		C7BFB638036384A6410889233EBBD5D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4031C7EC4781E091ADC086AC0104BC6 /* KKPopTooltip.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/KKPopTooltip/KKPopTooltip-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = KKPopTooltip;
+				PRODUCT_NAME = KKPopTooltip;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCEDD101FB22132685E3479E3890176D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8632EA270AA71A27D54084BDDB35E1C3 /* Pods-KKPopTooltipUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -957,73 +1154,6 @@
 			};
 			name = Release;
 		};
-		D6AE7CD8EC8D4162FE83EDAAB8DDA0A2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB62D5D0440A36D5C648DB7472F5B202 /* Pods-KKPopTooltipTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		D9759039A413AF89FBB08509D8BBF102 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 82E7AED26ED61D63955567D54C87F643 /* Pods-KKPopTooltipUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		EB6BA2687A774DE4BCF9B5053076706D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D80D7DFBEBA49D341FE2921D0D0694D2 /* Pods-KKPopTooltipTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		F158BA4F52E9591A2B649D0203B5E565 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2EC72AE2B8BDD97C7849F3CDB788FCF8 /* pop.debug.xcconfig */;
@@ -1047,6 +1177,28 @@
 			};
 			name = Debug;
 		};
+		FD86623C1E2F1AA44119BBB2C263C29C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB62D5D0440A36D5C648DB7472F5B202 /* Pods-KKPopTooltipTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1059,20 +1211,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		409465B9CCD3A1C76574FAD77CD7561E /* Build configuration list for PBXNativeTarget "Pods-KKPopTooltip" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				92B08354263CDFD6F607BF4CD32DF7B5 /* Debug */,
-				67C84A5AC69F3DDB32F3954A757F7FDA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F5CE9157A6944C572608740FA41A6A5 /* Debug */,
-				B102853BB3392A16E68667C38114BC6A /* Release */,
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1080,8 +1223,26 @@
 		5E2F8A8D16828C1290F01BDBD8E4DB35 /* Build configuration list for PBXNativeTarget "Pods-KKPopTooltipTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EB6BA2687A774DE4BCF9B5053076706D /* Debug */,
-				D6AE7CD8EC8D4162FE83EDAAB8DDA0A2 /* Release */,
+				098582882D42230856C25E8D0C827288 /* Debug */,
+				FD86623C1E2F1AA44119BBB2C263C29C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EF19D5975FD83E0D212BD4EAA3EC028 /* Build configuration list for PBXNativeTarget "KKPopTooltip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6421D7230F8944B6074DFEA5DFAD084F /* Debug */,
+				C7BFB638036384A6410889233EBBD5D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		681B7803C6DDFC3B97EE7A5EC4FAD6E7 /* Build configuration list for PBXNativeTarget "Pods-KKPopTooltip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4C9182EB522786553DC9F5CA1E2509E /* Debug */,
+				50A87A63FD545EA21299CF39B0D63198 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1098,8 +1259,8 @@
 		C59236053E61E1DEE9BEC5ADF2F6FF5E /* Build configuration list for PBXNativeTarget "Pods-KKPopTooltipUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D9759039A413AF89FBB08509D8BBF102 /* Debug */,
-				689F0501F83D418B7B347FFE64943E1D /* Release */,
+				7C7BBA7EF152AC83A0ABE25843CE61A1 /* Debug */,
+				CCEDD101FB22132685E3479E3890176D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

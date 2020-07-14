@@ -16,9 +16,6 @@
 		1AE0273F1F288AB70077F5A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AE0273D1F288AB70077F5A1 /* LaunchScreen.storyboard */; };
 		1AE0274A1F288AB70077F5A1 /* KKPopTooltipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE027491F288AB70077F5A1 /* KKPopTooltipTests.m */; };
 		1AE027551F288AB70077F5A1 /* KKPopTooltipUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE027541F288AB70077F5A1 /* KKPopTooltipUITests.m */; };
-		1AE027651F288AF10077F5A1 /* KKPopTooltip.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE027641F288AF10077F5A1 /* KKPopTooltip.m */; };
-		1AE027711F28916A0077F5A1 /* message@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE027701F28916A0077F5A1 /* message@2x.png */; };
-		1AE027731F2892A30077F5A1 /* photo_camera@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE027721F2892A30077F5A1 /* photo_camera@3x.png */; };
 		7DCEB915AB7DE6011907510E /* libPods-KKPopTooltipTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84010EE5486CA88FB0A48554 /* libPods-KKPopTooltipTests.a */; };
 		B26E440421FC04244D069057 /* libPods-KKPopTooltip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB360C38F1322C73C6D82E58 /* libPods-KKPopTooltip.a */; };
 /* End PBXBuildFile section */
@@ -58,10 +55,6 @@
 		1AE027501F288AB70077F5A1 /* KKPopTooltipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KKPopTooltipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE027541F288AB70077F5A1 /* KKPopTooltipUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKPopTooltipUITests.m; sourceTree = "<group>"; };
 		1AE027561F288AB70077F5A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1AE027631F288AF10077F5A1 /* KKPopTooltip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKPopTooltip.h; sourceTree = "<group>"; };
-		1AE027641F288AF10077F5A1 /* KKPopTooltip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKPopTooltip.m; sourceTree = "<group>"; };
-		1AE027701F28916A0077F5A1 /* message@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "message@2x.png"; sourceTree = "<group>"; };
-		1AE027721F2892A30077F5A1 /* photo_camera@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo_camera@3x.png"; sourceTree = "<group>"; };
 		4FC723E0DB75AC152F193D91 /* Pods-KKPopTooltipTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKPopTooltipTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KKPopTooltipTests/Pods-KKPopTooltipTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6E2BDA2B719C8BBAF0706EE5 /* Pods-KKPopTooltipUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKPopTooltipUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KKPopTooltipUITests/Pods-KKPopTooltipUITests.release.xcconfig"; sourceTree = "<group>"; };
 		75773D7345E49AE573194E36 /* Pods-KKPopTooltip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KKPopTooltip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KKPopTooltip/Pods-KKPopTooltip.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,7 +128,6 @@
 		1AE0272E1F288AB70077F5A1 /* KKPopTooltip */ = {
 			isa = PBXGroup;
 			children = (
-				1AE027621F288ADD0077F5A1 /* KKPopTooltip */,
 				1AE027321F288AB70077F5A1 /* AppDelegate.h */,
 				1AE027331F288AB70077F5A1 /* AppDelegate.m */,
 				1A2AE26E24BDCE8F00A579D4 /* TestViewController.h */,
@@ -143,8 +135,6 @@
 				1A2AE27024BDCE8F00A579D4 /* TestViewController.xib */,
 				1AE0273B1F288AB70077F5A1 /* Assets.xcassets */,
 				1AE0273D1F288AB70077F5A1 /* LaunchScreen.storyboard */,
-				1AE027701F28916A0077F5A1 /* message@2x.png */,
-				1AE027721F2892A30077F5A1 /* photo_camera@3x.png */,
 				1AE027401F288AB70077F5A1 /* Info.plist */,
 				1AE0272F1F288AB70077F5A1 /* Supporting Files */,
 			);
@@ -175,15 +165,6 @@
 				1AE027561F288AB70077F5A1 /* Info.plist */,
 			);
 			path = KKPopTooltipUITests;
-			sourceTree = "<group>";
-		};
-		1AE027621F288ADD0077F5A1 /* KKPopTooltip */ = {
-			isa = PBXGroup;
-			children = (
-				1AE027631F288AF10077F5A1 /* KKPopTooltip.h */,
-				1AE027641F288AF10077F5A1 /* KKPopTooltip.m */,
-			);
-			path = KKPopTooltip;
 			sourceTree = "<group>";
 		};
 		54E991952EDC09881E9E6D5E /* Pods */ = {
@@ -312,11 +293,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AE027711F28916A0077F5A1 /* message@2x.png in Resources */,
 				1AE0273F1F288AB70077F5A1 /* LaunchScreen.storyboard in Resources */,
 				1AE0273C1F288AB70077F5A1 /* Assets.xcassets in Resources */,
 				1A2AE27224BDCE8F00A579D4 /* TestViewController.xib in Resources */,
-				1AE027731F2892A30077F5A1 /* photo_camera@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,7 +377,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AE027651F288AF10077F5A1 /* KKPopTooltip.m in Sources */,
 				1AE027341F288AB70077F5A1 /* AppDelegate.m in Sources */,
 				1A2AE27124BDCE8F00A579D4 /* TestViewController.m in Sources */,
 				1AE027311F288AB70077F5A1 /* main.m in Sources */,
