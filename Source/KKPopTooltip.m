@@ -17,13 +17,13 @@ static CGFloat const radius = 10.0f;   /// 圆角半径
 static CGFloat const margin = 2.0f;    /// 内部边界
 static CGFloat const border = 12.0f; /// 文字到边框的距离
 
-typedef void((^DrawCompletion)());
+typedef void((^DrawCompletion)(void));
 
 @interface KKPopTooltip()
 @property (nonatomic, readwrite, assign) TooltipArrowPosition arrowPosition;
 @property (nonatomic, copy) DrawCompletion drawCompletion;
 @property (nonatomic, assign) CGPoint arrowPoint;
-@property (nonatomic, readwrite, strong) UILabel *textLabel;
+@property (nonatomic, readwrite, strong) UIView *contentView;
 @end
 
 @implementation KKPopTooltip
@@ -287,6 +287,7 @@ typedef void((^DrawCompletion)());
     CGPoint arrowPoint = [containerView convertPoint:point toView:tooltip];
     tooltip.arrowPoint = arrowPoint;
     [tooltip addSubview:contentView];
+    tooltip.contentView = contentView;
     [tooltip showInView:containerView animation:YES];
     return tooltip;
 }

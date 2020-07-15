@@ -30,6 +30,7 @@ typedef NS_ENUM(NSInteger, TooltipArrowPosition) {
 - (instancetype)initWithFrame:(CGRect)frame position:(TooltipArrowPosition)positin;
 
 @property (nonatomic, readonly, assign) TooltipArrowPosition arrowPosition;
+@property (nonatomic, readonly) UIView *contentView;
 
 - (void)showInView:(UIView *)view animation:(BOOL)animation;
 - (void)dismissAnimation:(BOOL)animation;
