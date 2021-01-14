@@ -15,7 +15,7 @@
 static CGFloat const attached = 16.0f; /// 箭头大小
 static CGFloat const radius = 10.0f;   /// 圆角半径
 static CGFloat const margin = 2.0f;    /// 内部边界
-static CGFloat const border = 12.0f; /// 文字到边框的距离
+static CGFloat const contentBorder = 12.0f; /// 文字到边框的距离
 
 typedef void((^DrawCompletion)(void));
 
@@ -28,8 +28,7 @@ typedef void((^DrawCompletion)(void));
 
 @implementation KKPopTooltip
 
-- (instancetype)initWithFrame:(CGRect)frame position:(TooltipArrowPosition)positin
-{
+- (instancetype)initWithFrame:(CGRect)frame position:(TooltipArrowPosition)positin {
     if (frame.size.width == 0 && frame.size.height == 0) {
         frame.size = CGSizeMake(200, 66);
     }
@@ -64,7 +63,7 @@ typedef void((^DrawCompletion)(void));
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     CGContextSetRGBFillColor(ctx, 1, 1, 1, 1);
     CGContextSetRGBStrokeColor(ctx, 0, 0, 0, 0);
-    CGFloat arrowX = [self getArrowX];
+    CGFloat arrowX = [self calArrowX];
     switch (self.arrowPosition) {
         case TooltipArrowPositionTop:
             [self drawTopAttachedWithContext:ctx arrow:arrowX];
@@ -134,7 +133,7 @@ typedef void((^DrawCompletion)(void));
 }
 
 /// 计算箭头指向位置
-- (CGFloat)getArrowX {
+- (CGFloat)calArrowX {
     CGFloat arrowX = self.arrowPoint.x;
     if (self.arrowPoint.x == 0) {
         arrowX = self.width/2;
@@ -192,7 +191,7 @@ typedef void((^DrawCompletion)(void));
     positionAnimation.fromValue = flag ? position1 : position2;
     positionAnimation.toValue = flag ? position2 : position1;
     
-    CGFloat arrowX = [self getArrowX];
+    CGFloat arrowX = [self calArrowX];
     POPSpringAnimation *positionXAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPositionX];
     positionXAnimation.springBounciness = 5;
     positionXAnimation.fromValue = [NSNumber numberWithFloat:flag ?  frame.origin.x + arrowX : frame.origin.x + frame.size.width/2.0];
@@ -243,10 +242,10 @@ typedef void((^DrawCompletion)(void));
     } else if (position == TooltipArrowPositionBottom) {
         point = CGPointMake(rect.origin.x + rect.size.width/2, rect.origin.y);
     }
-    return [self showPointing:point inView:containerView contentView:contentView arrowPosition:position];
+    return [self showPointing:point inView:containerView contentView:contentView border:0 arrowPosition:position];
 }
 
-+ (KKPopTooltip *)showPointing:(CGPoint )point inView:(UIView *)containerView message:(NSString *)message arrowPosition:(TooltipArrowPosition)position {
++ (KKPopTooltip *)showPointing:(CGPoint)point inView:(UIView *)containerView message:(NSString *)message arrowPosition:(TooltipArrowPosition)position {
     CGSize textSize = [message boundingRectWithSize:CGSizeMake(KK_SCREEN_WIDTH - 30 ,MAXFLOAT)
                                             options:NSStringDrawingUsesLineFragmentOrigin
                                          attributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:16]}
@@ -263,7 +262,18 @@ typedef void((^DrawCompletion)(void));
     return [self showPointing:point inView:containerView contentView:textLabel arrowPosition:position];
 }
 
-+ (KKPopTooltip *)showPointing:(CGPoint )point inView:(UIView *)containerView contentView:(UIView *)contentView arrowPosition:(TooltipArrowPosition)position {
++ (KKPopTooltip *)showPointing:(CGPoint)point
+       inView:(UIView *)containerView
+  contentView:(UIView *)contentView
+                 arrowPosition:(TooltipArrowPosition)position {
+    return [self showPointing:point inView:containerView contentView:contentView border:contentBorder arrowPosition:position];
+}
+
++ (KKPopTooltip *)showPointing:(CGPoint)point
+                        inView:(UIView *)containerView
+                   contentView:(UIView *)contentView
+                        border:(CGFloat)border
+                 arrowPosition:(TooltipArrowPosition)position {
     CGSize contentSize = contentView.frame.size;
     CGRect contentRect = contentView.frame;
     contentRect.origin.x = border + margin;
